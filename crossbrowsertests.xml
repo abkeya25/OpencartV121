@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="7" parallel="tests">  <!-- thread-count="5"  enough to run 50-100 test cases,its memory allocation, for 4-5 tc 2-3 thread-count is ok -->
+  
+  <test name="chrometest">
+   	<parameter name="os" value="Windows" />
+  	<parameter name="browser"  value="chrome"/>  
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest"/>
+       <class name="testCases.TC_002_LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="firefoxtest">
+   	<parameter name="os" value="Windows" />
+  	<parameter name="browser"  value="firefox"/>  
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest"/>
+       <class name="testCases.TC_002_LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="edgetest">
+   	<parameter name="os" value="Windows" />
+  	<parameter name="browser"  value="edge"/>  
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest"/>
+       <class name="testCases.TC_002_LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
+
+
