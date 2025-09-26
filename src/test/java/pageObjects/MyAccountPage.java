@@ -11,7 +11,7 @@ public class MyAccountPage extends BasePage {
 		super(driver);
 	}
 
-	@FindBy(xpath = "//h1[text()='My Account']") // MyAccount Page heading
+	@FindBy(xpath = "//h2[text()='My Account']") // MyAccount Page heading
 	WebElement msgHeading;
 	
 	@FindBy(linkText = "Logout")

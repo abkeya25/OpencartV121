@@ -97,7 +97,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		//driver.get("http://localhost/opencart/upload/index.php"); //when use hardcoded values and do not use property file
-		driver.get(p.getProperty("appURL1"));
+		driver.get(p.getProperty("appURL2"));
 		driver.manage().window().maximize();
 	}
 	

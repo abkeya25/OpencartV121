@@ -34,7 +34,7 @@ WebElement txtConfirmPassword;
 @FindBy(xpath="//input[@name='agree']") 
 WebElement chkdPolicy;
 
-@FindBy(xpath="//*[@id=\"form-register\"]/div/button") 
+@FindBy(xpath="//*[@id=\"content\"]/form/div/div/input[2]") 
 WebElement btnContinue;
 
 @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
